@@ -1,0 +1,18 @@
+$ORIGIN .
+$TTL 86400      ; 1 day
+sumo                    IN SOA  a.cloudregistry.net. bofh.cloudregistry.net. (
+                                6          ; serial
+                                14400      ; refresh (4 hours)
+                                7200       ; retry (2 hours)
+                                86400      ; expire (1 day)
+                                10800      ; minimum (3 hours)
+                                )
+$TTL 300        ; 5 minutes
+                        NS      a.cloudregistry.net.
+                        NS      b.cloudregistry.net.
+                        NS      ns1.nic.sumo.
+$ORIGIN sumo.
+ns1.nic                 A       12.22.23.32
+                        A       12.32.23.12
+wil                     NS      a.cloudregistry.net.
+                        NS      ns1.nic
