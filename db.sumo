@@ -1,7 +1,7 @@
 $ORIGIN .
 $TTL 86400      ; 1 day
-sumo                    IN SOA  a.cloudregistry.net. bofh.cloudregistry.net. (
-                                6          ; serial
+sumo                    IN SOA  a.cr11.net. bofh.cloudregistry.net. (
+                                7          ; serial
                                 14400      ; refresh (4 hours)
                                 7200       ; retry (2 hours)
                                 86400      ; expire (1 day)
